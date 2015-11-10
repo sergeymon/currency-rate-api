@@ -20,7 +20,7 @@ API Приложения
 
 ### Запрос
 
-    GET /api/rate/{code}/{date}
+    GET currency/api/rate/{code}/{date}
 
 
 ### Параметры
