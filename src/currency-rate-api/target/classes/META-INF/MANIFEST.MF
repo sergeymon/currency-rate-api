@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Implementation-Title: rate
-Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Version: 0.0.1
 Built-By: sergey
 Implementation-Vendor-Id: ru.myrest
 Class-Path: lib/xercesImpl-2.11.0.jar lib/xml-apis-1.4.01.jar lib/comm
@@ -25,5 +25,5 @@ Class-Path: lib/xercesImpl-2.11.0.jar lib/xml-apis-1.4.01.jar lib/comm
 Build-Jdk: 1.8.0_45
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
-Main-Class: ru.myrest.rate.RateController
+Main-Class: ru.myrest.rate.CurrencyRateController
 

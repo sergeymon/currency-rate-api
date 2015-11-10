@@ -52,18 +52,18 @@ public class Restriction
     @XmlElement(namespace = "http://www.w3.org/2001/XMLSchema")
     protected LocalSimpleType simpleType;
     @XmlElementRefs({
-        @XmlElementRef(name = "totalDigits", namespace = "http://www.w3.org/2001/XMLSchema", type = TotalDigits.class, required = false),
-        @XmlElementRef(name = "minExclusive", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "enumeration", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "pattern", namespace = "http://www.w3.org/2001/XMLSchema", type = Pattern.class, required = false),
-        @XmlElementRef(name = "fractionDigits", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "minLength", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "minInclusive", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "maxInclusive", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "maxExclusive", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "whiteSpace", namespace = "http://www.w3.org/2001/XMLSchema", type = WhiteSpace.class, required = false),
-        @XmlElementRef(name = "maxLength", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "length", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "maxExclusive", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "totalDigits", namespace = "http://www.w3.org/2001/XMLSchema", type = TotalDigits.class, required = false),
+        @XmlElementRef(name = "enumeration", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "fractionDigits", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "minExclusive", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "maxInclusive", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "minLength", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "maxLength", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "minInclusive", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "pattern", namespace = "http://www.w3.org/2001/XMLSchema", type = Pattern.class, required = false)
     })
     protected List<Object> minExclusivesAndMinInclusivesAndMaxExclusives;
     @XmlAttribute(name = "base")
@@ -111,18 +111,18 @@ public class Restriction
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link TotalDigits }
      * {@link JAXBElement }{@code <}{@link Facet }{@code >}
-     * {@link JAXBElement }{@code <}{@link NoFixedFacet }{@code >}
-     * {@link Pattern }
-     * {@link JAXBElement }{@code <}{@link NumFacet }{@code >}
-     * {@link JAXBElement }{@code <}{@link NumFacet }{@code >}
-     * {@link JAXBElement }{@code <}{@link Facet }{@code >}
-     * {@link JAXBElement }{@code <}{@link Facet }{@code >}
-     * {@link JAXBElement }{@code <}{@link NumFacet }{@code >}
      * {@link JAXBElement }{@code <}{@link NumFacet }{@code >}
      * {@link WhiteSpace }
+     * {@link TotalDigits }
+     * {@link JAXBElement }{@code <}{@link NoFixedFacet }{@code >}
+     * {@link JAXBElement }{@code <}{@link NumFacet }{@code >}
      * {@link JAXBElement }{@code <}{@link Facet }{@code >}
+     * {@link JAXBElement }{@code <}{@link Facet }{@code >}
+     * {@link JAXBElement }{@code <}{@link NumFacet }{@code >}
+     * {@link JAXBElement }{@code <}{@link Facet }{@code >}
+     * {@link JAXBElement }{@code <}{@link NumFacet }{@code >}
+     * {@link Pattern }
      * 
      * 
      */

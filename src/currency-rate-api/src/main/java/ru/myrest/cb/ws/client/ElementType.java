@@ -77,8 +77,8 @@ public abstract class ElementType
     protected LocalComplexType complexType;
     protected LocalSimpleType simpleType;
     @XmlElementRefs({
-        @XmlElementRef(name = "key", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "keyref", namespace = "http://www.w3.org/2001/XMLSchema", type = Keyref.class, required = false),
+        @XmlElementRef(name = "key", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "unique", namespace = "http://www.w3.org/2001/XMLSchema", type = JAXBElement.class, required = false)
     })
     protected List<Object> uniquesAndKeiesAndKeyreves;

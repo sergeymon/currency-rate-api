@@ -41,9 +41,4 @@ public class AppTest
     	System.out.println(rate.getCode() + " " + rate.getRate() + " " + rate.getDate());
     	assertNotNull(rate);
     }
-    
-    public void testOne() throws Exception
-    {
-    	System.out.println(String.format("sfsdf sdfssdfsdf sd%tF", new Date()));
-    }
 }

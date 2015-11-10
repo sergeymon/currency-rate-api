@@ -19,7 +19,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "DailyInfo", targetNamespace = "http://web.cbr.ru/", wsdlLocation = "file:/C:/Users/sergey/workspace/currency-rate-api/wsdl/cb_service.wsdl")
+@WebServiceClient(name = "DailyInfo", targetNamespace = "http://web.cbr.ru/", wsdlLocation = "file:/C:/tmp/currency-rate-api/src/currency-rate-api/wsdl/cb_service.wsdl")
 public class DailyInfo
     extends Service
 {
@@ -32,7 +32,7 @@ public class DailyInfo
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/C:/Users/sergey/workspace/currency-rate-api/wsdl/cb_service.wsdl");
+            url = new URL("file:/C:/tmp/currency-rate-api/src/currency-rate-api/wsdl/cb_service.wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

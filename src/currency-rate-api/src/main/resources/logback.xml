@@ -10,10 +10,10 @@
 	</appender>
   	
   	<appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
-    	<file>logs/rate.log</file>
+    	<file>${user.home}/logs/rate.log</file>
     	<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 	      	<!-- rollover daily -->
-	      	<fileNamePattern>logs/rate-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+	      	<fileNamePattern>${user.home}/logs/rate-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
 	      	<timeBasedFileNamingAndTriggeringPolicy
 	            class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
 	        <!-- or whenever the file size reaches 100MB -->

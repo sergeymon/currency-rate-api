@@ -105,6 +105,7 @@ public class CurrencyRateController
 	public static void main( String[] args )
     {
 		SpringApplication.run(CurrencyRateController.class, args);
+		logger.info(String.format("user.home = %s", System.getProperty("user.home")));
 		logger.info("Server started!");
     }
 }
